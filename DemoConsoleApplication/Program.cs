@@ -14,6 +14,9 @@ namespace DemoConsoleApplication
                 Strength strength = PasswordStrengthLogic.CheckStrength(pass);
                 switch (strength)
                 {
+                    case Strength.Blank:
+                        System.Console.WriteLine("Your password is Blank");
+                        break;
                     case Strength.VeryWeak:
                         System.Console.WriteLine("Your password is Very Weak");
                         break;

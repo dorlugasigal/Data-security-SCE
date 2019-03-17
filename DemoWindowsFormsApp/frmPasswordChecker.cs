@@ -19,8 +19,10 @@ namespace DemoWindowsFormsApp
             Strength strength = PasswordStrengthLogic.CheckStrength(pass);
             switch (strength)
             {
+                case Strength.Blank:
+                    lblResult.Text = "Your password is Blank";
+                    break;
                 case Strength.VeryWeak:
-                    
                     lblResult.Text = "Your password is Very Weak";
                     break;
                 case Strength.Weak:
