@@ -50,7 +50,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Data security SCE\PasswordStrengthDLL.csproj">
+    <ProjectReference Include="..\PasswordStrengthDLL\PasswordStrengthDLL.csproj">
       <Project>{0BB6F9D1-0294-4C0C-9580-13D0EAB4633C}</Project>
       <Name>PasswordStrengthDLL</Name>
     </ProjectReference>

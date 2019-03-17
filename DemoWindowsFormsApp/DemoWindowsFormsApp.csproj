@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="frmPasswordChecker.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmPasswordChecker.Designer.cs">
+      <DependentUpon>frmPasswordChecker.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frmPasswordChecker.resx">
+      <DependentUpon>frmPasswordChecker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,7 +80,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Data security SCE\PasswordStrengthDLL.csproj">
+    <ProjectReference Include="..\PasswordStrengthDLL\PasswordStrengthDLL.csproj">
       <Project>{0bb6f9d1-0294-4c0c-9580-13d0eab4633c}</Project>
       <Name>PasswordStrengthDLL</Name>
     </ProjectReference>
