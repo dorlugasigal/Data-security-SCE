@@ -1,0 +1,6 @@
+C:\Users\Dor\source\repos\Data security SCE\Data security SCE\bin\Debug\Data security SCE.dll
+C:\Users\Dor\source\repos\Data security SCE\Data security SCE\bin\Debug\Data security SCE.pdb
+C:\Users\Dor\source\repos\Data security SCE\Data security SCE\obj\Debug\Data security dll.csprojAssemblyReference.cache
+C:\Users\Dor\source\repos\Data security SCE\Data security SCE\obj\Debug\Data security dll.csproj.CoreCompileInputs.cache
+C:\Users\Dor\source\repos\Data security SCE\Data security SCE\obj\Debug\Data security SCE.dll
+C:\Users\Dor\source\repos\Data security SCE\Data security SCE\obj\Debug\Data security SCE.pdb

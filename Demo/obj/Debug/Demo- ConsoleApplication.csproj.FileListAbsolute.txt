@@ -1,0 +1,10 @@
+C:\Users\Dor\source\repos\Data security SCE\Demo\obj\Debug\Demo- ConsoleApplication.csprojAssemblyReference.cache
+C:\Users\Dor\source\repos\Data security SCE\Demo\obj\Debug\Demo- ConsoleApplication.csproj.CoreCompileInputs.cache
+C:\Users\Dor\source\repos\Data security SCE\Demo\bin\Debug\Demo.exe.config
+C:\Users\Dor\source\repos\Data security SCE\Demo\bin\Debug\Demo.exe
+C:\Users\Dor\source\repos\Data security SCE\Demo\bin\Debug\Demo.pdb
+C:\Users\Dor\source\repos\Data security SCE\Demo\bin\Debug\PasswordStrengthDLL.dll
+C:\Users\Dor\source\repos\Data security SCE\Demo\bin\Debug\PasswordStrengthDLL.pdb
+C:\Users\Dor\source\repos\Data security SCE\Demo\obj\Debug\Demo- ConsoleApplication.csproj.CopyComplete
+C:\Users\Dor\source\repos\Data security SCE\Demo\obj\Debug\Demo.exe
+C:\Users\Dor\source\repos\Data security SCE\Demo\obj\Debug\Demo.pdb

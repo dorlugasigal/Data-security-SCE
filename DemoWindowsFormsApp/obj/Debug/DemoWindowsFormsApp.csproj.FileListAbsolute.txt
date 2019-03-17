@@ -1,0 +1,13 @@
+C:\Users\Dor\source\repos\Data security SCE\DemoWindowsFormsApp\bin\Debug\DemoWindowsFormsApp.exe.config
+C:\Users\Dor\source\repos\Data security SCE\DemoWindowsFormsApp\bin\Debug\DemoWindowsFormsApp.exe
+C:\Users\Dor\source\repos\Data security SCE\DemoWindowsFormsApp\bin\Debug\DemoWindowsFormsApp.pdb
+C:\Users\Dor\source\repos\Data security SCE\DemoWindowsFormsApp\bin\Debug\PasswordStrengthDLL.dll
+C:\Users\Dor\source\repos\Data security SCE\DemoWindowsFormsApp\bin\Debug\PasswordStrengthDLL.pdb
+C:\Users\Dor\source\repos\Data security SCE\DemoWindowsFormsApp\obj\Debug\DemoWindowsFormsApp.csprojAssemblyReference.cache
+C:\Users\Dor\source\repos\Data security SCE\DemoWindowsFormsApp\obj\Debug\DemoWindowsFormsApp.frmPasswordChecker.resources
+C:\Users\Dor\source\repos\Data security SCE\DemoWindowsFormsApp\obj\Debug\DemoWindowsFormsApp.Properties.Resources.resources
+C:\Users\Dor\source\repos\Data security SCE\DemoWindowsFormsApp\obj\Debug\DemoWindowsFormsApp.csproj.GenerateResource.cache
+C:\Users\Dor\source\repos\Data security SCE\DemoWindowsFormsApp\obj\Debug\DemoWindowsFormsApp.csproj.CoreCompileInputs.cache
+C:\Users\Dor\source\repos\Data security SCE\DemoWindowsFormsApp\obj\Debug\DemoWindowsFormsApp.csproj.CopyComplete
+C:\Users\Dor\source\repos\Data security SCE\DemoWindowsFormsApp\obj\Debug\DemoWindowsFormsApp.exe
+C:\Users\Dor\source\repos\Data security SCE\DemoWindowsFormsApp\obj\Debug\DemoWindowsFormsApp.pdb
