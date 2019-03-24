@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MinimumEditDistance;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,5 +14,12 @@ namespace PasswordStrengthDLL
         public static Regex RgxHasUpperLetter = new Regex(@"[A-Z]");
         public static Regex RgxHasLowerLetter = new Regex(@"[a-z]");
         public static Regex RgxHasSpecialCharacter = new Regex(@"/.[!,@,#,$,%,^,&,*,?,_,~,-,£,(,)]/");
+
+        //CHANGE
+        public static void ASD()
+        {
+            Levenshtein.CalculateDistance("a","b", 1);
+        }
     }
+
 }
