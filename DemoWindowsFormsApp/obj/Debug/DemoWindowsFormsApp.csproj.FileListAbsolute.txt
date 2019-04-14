@@ -11,3 +11,5 @@ C:\Users\Dor\source\repos\Data security SCE\DemoWindowsFormsApp\obj\Debug\DemoWi
 C:\Users\Dor\source\repos\Data security SCE\DemoWindowsFormsApp\obj\Debug\DemoWindowsFormsApp.exe
 C:\Users\Dor\source\repos\Data security SCE\DemoWindowsFormsApp\obj\Debug\DemoWindowsFormsApp.pdb
 C:\Users\Dor\source\repos\Data security SCE\DemoWindowsFormsApp\obj\Debug\DemoWindowsFormsApp.csprojAssemblyReference.cache
+C:\Users\Dor\source\repos\Data security SCE\DemoWindowsFormsApp\bin\Debug\passwordList.txt
+C:\Users\Dor\source\repos\Data security SCE\DemoWindowsFormsApp\bin\Debug\MinimumEditDistance.dll

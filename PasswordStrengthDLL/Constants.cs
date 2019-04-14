@@ -1,4 +1,7 @@
-﻿namespace PasswordStrengthDLL
+﻿using System;
+using System.IO;
+
+namespace PasswordStrengthDLL
 {
     public class Constants
     {
@@ -10,6 +13,7 @@
             Medium,
             Strong,
             VeryStrong
-        };      
+        };
+        public const int LEVENSHTEIN_THRESHOLD = 1;
     }
 }

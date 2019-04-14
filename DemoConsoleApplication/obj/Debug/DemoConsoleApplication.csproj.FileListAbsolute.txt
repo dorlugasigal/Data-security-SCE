@@ -18,3 +18,5 @@ C:\Users\Dor\source\repos\Data security SCE\DemoConsoleApplication\obj\Debug\Dem
 C:\Users\Dor\source\repos\Data security SCE\DemoConsoleApplication\obj\Debug\DemoConsoleApplication.csproj.CopyComplete
 C:\Users\Dor\source\repos\Data security SCE\DemoConsoleApplication\obj\Debug\DemoConsoleApplication.exe
 C:\Users\Dor\source\repos\Data security SCE\DemoConsoleApplication\obj\Debug\DemoConsoleApplication.pdb
+C:\Users\Dor\source\repos\Data security SCE\DemoConsoleApplication\bin\Debug\passwordList.txt
+C:\Users\Dor\source\repos\Data security SCE\DemoConsoleApplication\bin\Debug\MinimumEditDistance.dll
