@@ -13,12 +13,22 @@ namespace PasswordStrengthDLL
         public static Regex RgxHasDigit = new Regex(@"\d");
         public static Regex RgxHasUpperLetter = new Regex(@"[A-Z]");
         public static Regex RgxHasLowerLetter = new Regex(@"[a-z]");
-        public static Regex RgxHasSpecialCharacter = new Regex(@"/.[!,@,#,$,%,^,&,*,?,_,~,-,£,(,)]/");
+        public static bool RgxHasSpecialCharacter(string pass)
+        {
+            for (int i = 0; i < pass.Length; i++)
+            {
+                if (!Char.IsLetterOrDigit(pass[i]))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
 
         //CHANGE
         public static void ASD()
         {
-            Levenshtein.CalculateDistance("a","b", 1);
+            Levenshtein.CalculateDistance("a", "b", 1);
         }
     }
 
