@@ -51,13 +51,12 @@ namespace PasswordStrengthDLL
             string PasswordListPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "passwordList.txt");
             int passwordScore = 0;
 
-
             passwordScore += HasDigit(pass, out bool boolHasDigit);
             passwordScore += HasLowerLetter(pass, out bool boolHasLowerLetter);
             passwordScore += HasSpecialCharacter(pass, out bool boolHasSpecialCharacter);
             passwordScore += HasUpperLetter(pass, out bool boolHasUpperLetter);
 
-            Console.WriteLine($"basic Validation:");
+            Console.WriteLine($"Basic Validation:");
 
             ColoredConsoleWrite((passwordScore == 100 ? ConsoleColor.Green : ConsoleColor.Red), $"password score: {passwordScore} / 100");
             Console.Write("Digit included :");
@@ -69,13 +68,15 @@ namespace PasswordStrengthDLL
             Console.Write("Upper Letter included :");
             ColoredConsoleWrite((boolHasUpperLetter ? ConsoleColor.Green : ConsoleColor.Red), $" {(boolHasUpperLetter ? "Yes" : "No")}");
 
-
             if (passwordScore != 100)
             {
                 Console.WriteLine($"Pasword '{pass}' must pass the basic tests before the Advanced qualifications");
                 GetSimilarPasswordList = null;
                 return Constants.Strength.VeryWeak;
             }
+            Console.WriteLine($"Advanced Validation:");
+            Console.WriteLine("Please wait...");
+            Console.SetCursorPosition(Console.CursorLeft, Console.CursorTop - 1);
 
             var fileStream = new FileStream(PasswordListPath, FileMode.Open, FileAccess.Read);
             using (var streamReader = new StreamReader(fileStream, Encoding.UTF8))
@@ -91,37 +92,47 @@ namespace PasswordStrengthDLL
                         GetSimilarPasswordList.Add(line);
                     }
                 }
-
-                switch (GetSimilarPasswordList.Count)
-                {
-                    case 0:
-                        ColoredConsoleWrite(ConsoleColor.Green, $"passsword {pass} is Very Strong");
-                        GetSimilarPasswordList = null;
-                        return Constants.Strength.VeryStrong;
-                    case 1:
-                    case 2:
-                    case 3:
-                        ColoredConsoleWrite(ConsoleColor.DarkCyan, $"found {GetSimilarPasswordList.Count} similar passwords ");
-                        GetSimilarPasswordList = null;
-                        ColoredConsoleWrite(ConsoleColor.DarkYellow, $"passsword {pass} is Strong");
-                        return Constants.Strength.Strong;
-                    case 4:
-                    case 5:
-                    case 6:
-                    case 7:
-                    case 8:
-                    case 9:
-                        ColoredConsoleWrite(ConsoleColor.DarkCyan, $"found {GetSimilarPasswordList.Count} similar passwords ");
-                        GetSimilarPasswordList = null;
-                        ColoredConsoleWrite(ConsoleColor.DarkYellow, $"passsword {pass} is Medium");
-                        return Constants.Strength.Medium;
-                    default:
-                        ColoredConsoleWrite(ConsoleColor.DarkCyan, $"found {GetSimilarPasswordList.Count} similar passwords ");
-                        GetSimilarPasswordList = null;
-                        ColoredConsoleWrite(ConsoleColor.Red, $"passsword {pass} is Weak");
-                        return Constants.Strength.Weak;
-                }
             }
+            int count = GetSimilarPasswordList.Count;
+            if (count == 0)
+            {
+                return PrintFinalResult(count, pass, Constants.Strength.VeryStrong, ConsoleColor.Green);
+            }
+            else if (count > 0 && count < 4)
+            {
+                return PrintFinalResult(count, pass, Constants.Strength.Strong, ConsoleColor.Yellow);
+            }
+            else if (count > 3 && count < 10)
+            {
+                return PrintFinalResult(count, pass, Constants.Strength.Medium, ConsoleColor.DarkYellow);
+            }
+            else
+            {
+                return PrintFinalResult(count, pass, Constants.Strength.Weak, ConsoleColor.Red);
+            }
+        }
+
+        /// <summary>
+        /// Priunt the final result in the console , and return the Strength to the client
+        /// </summary>
+        /// <param name="count">the amount of passwords</param>
+        /// <param name="pass">the password string</param>
+        /// <param name="strength">the returned strength</param>
+        /// <param name="consoleColor">the color of the strength</param>
+        /// <returns>Strength</returns>
+        private static Constants.Strength PrintFinalResult(int count, string pass, Constants.Strength strength, ConsoleColor consoleColor)
+        {
+            if (count > 0)
+            {
+                ColoredConsoleWrite(ConsoleColor.DarkCyan, $"found {count} similar passwords ");
+            }
+            else
+            {
+                ColoredConsoleWrite(ConsoleColor.Green, $"Couldnt find any similar passwords");
+            }
+            GetSimilarPasswordList = null;
+            ColoredConsoleWrite(consoleColor, $"passsword {pass} is {strength.ToString()}");
+            return strength;
         }
 
         /// <summary>

@@ -32,3 +32,15 @@ C:\Users\dorlu\Desktop\data-security-sce\DemoConsoleApplication\obj\Debug\DemoCo
 C:\Users\dorlu\Desktop\data-security-sce\DemoConsoleApplication\obj\Debug\DemoConsoleApplication.csproj.CopyComplete
 C:\Users\dorlu\Desktop\data-security-sce\DemoConsoleApplication\obj\Debug\DemoConsoleApplication.exe
 C:\Users\dorlu\Desktop\data-security-sce\DemoConsoleApplication\obj\Debug\DemoConsoleApplication.pdb
+C:\Projects\data-security-sce\DemoConsoleApplication\bin\Debug\passwordList.txt
+C:\Projects\data-security-sce\DemoConsoleApplication\bin\Debug\DemoConsoleApplication.exe.config
+C:\Projects\data-security-sce\DemoConsoleApplication\bin\Debug\DemoConsoleApplication.exe
+C:\Projects\data-security-sce\DemoConsoleApplication\bin\Debug\DemoConsoleApplication.pdb
+C:\Projects\data-security-sce\DemoConsoleApplication\bin\Debug\PasswordStrengthDLL.dll
+C:\Projects\data-security-sce\DemoConsoleApplication\bin\Debug\MinimumEditDistance.dll
+C:\Projects\data-security-sce\DemoConsoleApplication\bin\Debug\PasswordStrengthDLL.pdb
+C:\Projects\data-security-sce\DemoConsoleApplication\obj\Debug\DemoConsoleApplication.csprojAssemblyReference.cache
+C:\Projects\data-security-sce\DemoConsoleApplication\obj\Debug\DemoConsoleApplication.csproj.CoreCompileInputs.cache
+C:\Projects\data-security-sce\DemoConsoleApplication\obj\Debug\DemoConsoleApplication.csproj.CopyComplete
+C:\Projects\data-security-sce\DemoConsoleApplication\obj\Debug\DemoConsoleApplication.exe
+C:\Projects\data-security-sce\DemoConsoleApplication\obj\Debug\DemoConsoleApplication.pdb
